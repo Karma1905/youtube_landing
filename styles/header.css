@@ -1,0 +1,191 @@
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(230, 230, 230);
+    z-index: 100;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+   
+}
+
+.middle-section{
+    flex: 1; 
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    height: 37px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 188, 188); 
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-family: roboto,arial;
+    font-size: 16px;
+}
+
+
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color:  rgb(192, 188, 188); 
+    margin-left: -1px;
+    margin-right: 10px;
+    cursor: pointer
+    
+}
+
+.search-button,
+.voice-button,
+.uplode-icon,
+.apps-icon,
+.notification-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+} 
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.uplode-icon .tooltip,
+.apps-icon .tooltip,
+.notification-container .tooltip{
+    font-family: roboto,arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.uplode-icon:hover .tooltip,
+.apps-icon:hover .tooltip,
+.notification-container:hover .tooltip{
+    opacity:1;
+}
+
+.search-icon:active,
+.voice-icon:active,
+.upload:active,
+.yt-apps:active,
+.notification:active{
+    height: 22px
+}
+
+.search-icon{
+    height: 25px;
+}
+
+.voice-button{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.voice-icon{
+    height: 24px;
+    background-color: rgb(245, 245, 245);
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.hamburgers{
+     height: 24px;
+     margin-left: 24px;
+     margin-right: 20px;
+     cursor: pointer;
+}
+
+.yt-logo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.upload{
+    height: 24px;
+    cursor: pointer;
+}
+
+.yt-apps{
+    height: 24px;
+    cursor: pointer;
+}
+
+.notification{
+    height: 24px;
+    cursor: pointer;
+}
+
+.notification-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -4px;
+    right: -5px ;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    font-family: roboto,arial;
+    font-size: 11px;
+    padding-left: 5px ;
+    padding-right: 5px ;
+    padding-top: 2px ;
+    padding-bottom: 2px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profil{
+    height: 32px;
+    border-radius: 25px;
+    cursor: pointer;
+}
